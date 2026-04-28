@@ -23,6 +23,6 @@ jobs:
       - name: Build e Push da Imagem
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./Dev.Mobile-13.03-main
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo-app:latest
